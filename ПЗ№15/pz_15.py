@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Приложение БАНК для отслеживания накапливаемых на счетах клиентов банка
 # сумм. Таблица Клиент должна содержать следующую информацию: Код клиента,
 # Клиент (Ф.И.О.), Периодический платеж, Годовой %, Срок вклада, Пластиковая карта
@@ -115,31 +114,3 @@ print("\nИнформация о таблице после операций:")
 show_table_info()
 
 
-#удаление по коду
-print("\nУдалим клиентов 4, 5 , 6 по коду:")
-client_code_to_delete = 4
-client_code_to_delete1 = 5
-client_code_to_delete2 = 6
-delete_by_client_code(client_code_to_delete)
-delete_by_client_code(client_code_to_delete1)
-delete_by_client_code(client_code_to_delete2)
-
-
-print("\nИнформация о таблице после операций:")
-show_table_info()
-
-#удалим по фио
-print("Удалим Петрова Петра Петровича,Максимова Максима Ивановича, Иванову Катеринау Петровну ")
-full_name_to_delete = "Петров Петр Петрович"
-delete_by_full_name(full_name_to_delete)
-full_name_to_delete1 = "Максимов Максим Иванович"
-delete_by_full_name(full_name_to_delete1)
-full_name_to_delete2 = "Иванова Катерина Петровна"
-delete_by_full_name(full_name_to_delete2)
-
-
-print("\nИнформация о таблице после операций:")
-show_table_info()
-
-
-conn.close()
